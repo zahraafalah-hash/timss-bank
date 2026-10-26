@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="بنك أسئلة TIMSS - مدرسة الدراز الإعدادية للبنات">
+<title>بنك أسئلة TIMSS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@500;700&display=swap">
+<style>
+:root{--bg:#f6f8fb;--card:#fff;--tx:#1b2733;--mu:#5b6b7a;--ac:#0b6e99;--bd:#d9e1e8;--ok:#fff6bf;--sim:#eef6fa;--hero:#0b6e99;color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10171d;--card:#18222b;--tx:#e8eef3;--mu:#9fb0bf;--ac:#5cc0e8;--bd:#2c3a46;--ok:#4a4311;--sim:#14262f;--hero:#0e4a66;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#10171d;--card:#18222b;--tx:#e8eef3;--mu:#9fb0bf;--ac:#5cc0e8;--bd:#2c3a46;--ok:#4a4311;--sim:#14262f;--hero:#0e4a66;color-scheme:dark}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:"Segoe UI",Tahoma,"Noto Naskh Arabic",sans-serif;line-height:1.6}
+.page{direction:rtl}
+header{padding:20px 16px 8px;max-width:1000px;margin:auto}
+h1{margin:0;font-size:1.5rem}header p{margin:4px 0 0;color:var(--mu);font-size:.9rem}
+.owner{margin-top:8px;font-size:.85rem;background:var(--sim);border:1px solid var(--bd);border-radius:8px;padding:6px 10px}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:5;padding:10px 16px;border-bottom:1px solid var(--bd)}
+.bar div{max-width:1000px;margin:auto;display:flex;flex-wrap:wrap;gap:8px}
+input,select,button{font:inherit;color:var(--tx);background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:8px 10px}
+input{flex:1 1 220px}select{flex:1 1 150px;min-width:0;width:0}
+button{cursor:pointer}button.p{background:var(--ac);color:#fff;border-color:var(--ac)}button:disabled{opacity:.6;cursor:default}
+:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+main{max-width:1000px;margin:auto;padding:12px 16px 40px}
+.cnt{color:var(--mu);font-size:.85rem;margin:4px 0 10px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:12px;margin-bottom:16px;overflow:hidden}
+.meta{padding:10px 14px;display:flex;flex-wrap:wrap;gap:6px;align-items:center;border-bottom:1px solid var(--bd)}
+.tag{font-size:.78rem;border:1px solid var(--bd);border-radius:20px;padding:1px 10px;color:var(--mu)}
+.tag.s{border-color:var(--ac);color:var(--ac)}
+.tag.ok{border-color:#9fd4b0;color:#14602e}.tag.sg{border-color:#f0c98a;color:#7a4a00}
+.ttl{font-weight:600;flex:1 1 100%}
+.img{padding:10px;text-align:center;background:#fff}.img img{max-width:100%;height:auto}
+.act{padding:10px 14px;display:flex;gap:8px;flex-wrap:wrap;border-top:1px solid var(--bd)}
+.ans{background:#fff;color:#1b2733;border-top:2px dashed var(--ac);padding:10px;text-align:start}.ans img{display:block;margin:auto;max-width:100%}
+.na{padding:12px 14px;color:var(--mu);border-top:2px dashed var(--bd)}
+.alab{display:inline-block;font-size:.8rem;font-weight:700;border-radius:20px;padding:2px 12px;margin-bottom:8px}
+.alab.ok{background:#e3f4e8;color:#14602e;border:1px solid #9fd4b0}.alab.sg{background:#fff1dc;color:#7a4a00;border:1px solid #f0c98a}
+.at{font-size:1.05rem;font-weight:700;margin:4px 0 6px;white-space:pre-wrap}.sgb{margin-top:10px}.ans .sgb:first-child{margin-top:0}
+.nt{margin-top:10px;padding:8px 10px;border-radius:8px;background:#fff1dc;color:#7a4a00;border:1px solid #f0c98a;font-size:.9rem}
+.ex{color:#33424f;white-space:pre-wrap}.rf{font-size:.8rem;color:#5b6b7a;margin-top:6px}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .tag.ok{color:#8fdcaa;border-color:#2f6b45}:root:not([data-theme="light"]) .tag.sg{color:#f3c27a;border-color:#7a5520}}
+:root[data-theme="dark"] .tag.ok{color:#8fdcaa;border-color:#2f6b45}:root[data-theme="dark"] .tag.sg{color:#f3c27a;border-color:#7a5520}
+.gen,.sim{padding:12px 14px;border-top:1px solid var(--bd)}
+.gen{background:var(--bg)}.sim{background:var(--sim)}
+.sim h3{margin:0 0 8px;font-size:.95rem;color:var(--ac)}
+.gq{background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:10px 12px;margin-bottom:8px}
+.gq b.h{color:var(--ac);display:block;margin-bottom:4px}
+.gq .qt{white-space:pre-wrap}
+.gq .opts{margin-top:6px}
+.gq .svg{display:block;max-width:100%;background:#fff;border:1px solid var(--bd);border-radius:8px;margin:8px 0}
+.gq .row{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.ga{background:var(--ok);padding:6px 8px;border-radius:6px;margin-top:6px;white-space:pre-wrap}
+.note{font-size:.8rem;color:var(--mu)}
+/* Home */
+.home{max-width:1000px;margin:auto;padding:0 max(16px,env(safe-area-inset-left,0px)) 40px max(16px,env(safe-area-inset-right,0px))}
+.hero{margin:20px 0 24px;padding:28px 22px 24px;border-radius:16px;background:var(--hero);color:#fff;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset-inline-start:-60px;bottom:-80px;width:220px;height:220px;border-radius:50%;border:28px solid rgba(255,255,255,.12)}
+.hero .school{font-size:.95rem;opacity:.95;margin:0 0 6px}
+.hero h1{font-family:"Noto Kufi Arabic","Segoe UI",Tahoma,sans-serif;font-size:clamp(1.7rem,6vw,2.6rem);line-height:1.3;margin:0 0 10px;text-wrap:balance}
+.hero .init{margin:0;font-size:1rem;max-width:40ch}
+.hero .year{display:inline-block;margin-top:14px;font-size:.85rem;padding:3px 12px;border-radius:20px;background:rgba(255,255,255,.18)}
+.pick{font-family:"Noto Kufi Arabic","Segoe UI",Tahoma,sans-serif;font-size:1.05rem;margin:0 0 12px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr));gap:12px}
+.tile{text-align:start;display:grid;align-content:start;gap:2px;padding:16px;border-radius:12px;border:1px solid var(--bd);background:var(--card);cursor:pointer;font:inherit;color:var(--tx)}
+.tile:hover{border-color:var(--ac)}
+.tile .sb{font-family:"Noto Kufi Arabic","Segoe UI",Tahoma,sans-serif;font-weight:700;font-size:1.1rem;color:var(--ac)}
+.tile .gd{font-weight:600}
+.tile .nm{font-size:.82rem;color:var(--mu);font-variant-numeric:tabular-nums}
+.credit{margin-top:28px;padding-top:14px;border-top:1px solid var(--bd);color:var(--mu);font-size:.88rem;display:grid;gap:2px}
+.credit b{color:var(--tx);font-weight:600}
+.back{border:none;background:none;color:var(--ac);padding:0;margin-bottom:6px;font-size:.9rem}
+.toast{position:fixed;inset-inline:0;bottom:calc(16px + env(safe-area-inset-bottom,0px));margin:auto;width:max-content;max-width:calc(100vw - 32px);background:var(--tx);color:var(--bg);padding:8px 14px;border-radius:8px;font-size:.9rem;z-index:20}
+</style>
+<style>[hidden]{display:none!important}img{max-width:100%}body{margin:0}</style>
+</head>
+<body>
+
+<div class="page" dir="rtl" lang="ar">
+<section class="home" id="home">
+<div class="hero">
+<p class="school">مدرسة الدراز الإعدادية للبنات</p>
+<h1>بنك أسئلة TIMSS</h1>
+<p class="init">مبادرة من قسم التمكين الرقمي في التعليم</p>
+<span class="year">العام الدراسي ٢٠٢٦ – ٢٠٢٧</span>
+</div>
+<h2 class="pick">اختاري المادة والصف</h2>
+<div class="tiles" id="tiles"></div>
+<div class="credit"><span>فكرة وإعداد</span><b>اختصاصية تكنولوجيا التعليم أ. زهراء فلاح</b></div>
+</section>
+<div id="bankView" hidden>
+<header><button type="button" class="back" id="backHome">→ الصفحة الرئيسية</button><h1 id="h1">بنك أسئلة TIMSS</h1><p id="sub"></p><div class="owner" id="ownerNote" hidden "></div></header>
+<div class="bar"><div>
+<input id="q" type="search" aria-label="بحث">
+<select id="mat" aria-label="المادة"></select>
+<select id="gr" aria-label="الصف"></select>
+<select id="un" aria-label="الوحدة"><option value="">كل الوحدات</option></select>
+<select id="sk" aria-label="المهارة"><option value="">كل المهارات</option><option>معرفة</option><option>تطبيق</option><option>استدلال</option></select>
+<select id="src" aria-label="المصدر" hidden></select>
+<select id="hasSim" aria-label="الأسئلة المشابهة"><option value="">كل الأسئلة</option><option value="1">لها أسئلة مقترحة</option></select>
+</div></div>
+<main><div class="cnt" id="cnt"></div><div id="list"></div></main>
+</div>
+</div>
+<script type="application/json" id="simdata">{"t":0,"items":{}}</script>
+<script>
+"use strict";
+const $=s=>document.querySelector(s);
+function el(t,c,x){const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
+function opts(sel,vals,first){sel.textContent='';if(first)sel.append(new Option(first,''));vals.forEach(v=>sel.append(new Option(v,v)))}
+const norm=s=>s.replace(/[ً-ْـ]/g,'').replace(/[أإآ]/g,'ا').replace(/ى/g,'ي').replace(/ة/g,'ه').toLowerCase();
+const ss={get(k){try{return sessionStorage.getItem(k)}catch(e){return null}},set(k,v){try{sessionStorage.setItem(k,v)}catch(e){}},del(k){try{sessionStorage.removeItem(k)}catch(e){}}};
+const ls={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+function toast(t){const d=el('div','toast',t);d.setAttribute('role','status');document.body.append(d);setTimeout(()=>d.remove(),3500)}
+
+const SETS=[
+ {id:'sci7',n:56,subj:'العلوم',grade:'الصف السابع',file:'data/sci7.json',sub:'الصف السابع · الفصل الدراسي الثاني · أنشطة إثرائية كفايات TIMSS 2027 (وزارة التربية والتعليم - البحرين)',ph:'ابحثي بكلمة: مغناطيس، تجوية، هرم الطاقة…',role:'للعلوم للصف السابع',ex:'مثال: إذا سأل الأصل عن مصابيح موصولة بالتوازي فاسألي عن أجهزة أخرى أو عن تغيير مختلف في الدائرة؛ وإذا سأل عن تصنيف حيوانات فاستعملي حيوانات وصفة تصنيف مختلفة'},
+ {id:'sci8',n:207,subj:'العلوم',grade:'الصف الثامن',file:'data/sci8.json',sub:'الصف الثامن · المذكرة الإثرائية لكفايات TIMSS (وزارة التربية والتعليم - البحرين)',ph:'ابحثي بكلمة: كثافة، تجوية، مغناطيس، خلية…',role:'للعلوم للصف الثامن',ex:'مثال: إذا سأل الأصل عن تمدد سكة الحديد بالحرارة فاسألي عن تطبيق آخر للتمدد الحراري؛ وإذا سأل عن تصنيف حيوانات فاستعملي حيوانات وصفة تصنيف مختلفة'},
+ {id:'math7',n:41,subj:'الرياضيات',grade:'الصف السابع',file:'data/math7.json',sub:'الصف السابع · الفصل الدراسي الثاني · أنشطة إثرائية على كفايات TIMSS 2019 (وزارة التربية والتعليم - البحرين)',ph:'ابحثي بكلمة: الوسيط، احتمال، زوايا، مساحة…',role:'للرياضيات للصف السابع',ex:'مثال: إذا سأل الأصل عن الوسط الحسابي لدرجات طالب فاسألي عن بيانات من موقف آخر بأرقام مختلفة؛ وإذا سأل عن انعكاس شكل حول محور فاستعملي شكلاً ومحوراً مختلفين'},
+ {id:'math8',n:194,subj:'الرياضيات',grade:'الصف الثامن',file:'data/math8.json',sub:'الصف الثامن · أنشطة إثرائية على كفايات TIMSS 2019 وتدريبات eTIMSS (وزارة التربية والتعليم - البحرين)',ph:'ابحثي بكلمة: كسور، نسبة مئوية، فيثاغورس، انعكاس…',role:'للرياضيات للصف الثامن',ex:'مثال: إذا سأل الأصل عن خلط توابل بنسبة فاسألي عن موقف آخر يستعمل التناسب بأرقام مختلفة؛ وإذا سأل عن انعكاس شكل حول محور فاستعملي شكلاً ومحوراً مختلفين'}];
+
+// ---------- Saved similar questions ----------
+// Kept in two places so saving works whether the page is private (files publish to
+// data/similar.json) or shared by link (whole-page publish with the data embedded).
+// On load, the copy with the newer timestamp wins.
+let SIM={t:0,items:{}};
+try{const e=JSON.parse($('#simdata').textContent);if(e&&e.items)SIM=e}catch(e){}
+const simKey=(set,d)=>set.id+':'+d.id;
+const simFor=(set,d)=>SIM.items[simKey(set,d)]||[];
+let IS_OWNER=false,ART=null;
+
+async function loadSimFile(){
+  try{const r=await fetch('data/similar.json',{cache:'no-store'});if(r.ok){const f=await r.json();if(f&&f.items&&f.t>SIM.t){SIM=f;return true}}}catch(e){}
+  return false;
+}
+
+// Remember generated questions across the reload a whole-page save triggers.
+const GEN={},SHOWN={};
+function stashGen(){ss.set('gen',JSON.stringify({set:SET.id,items:GEN,shown:SHOWN,y:scrollY}))}
+
+async function persist(){
+  SIM.t=Date.now();
+  const json=JSON.stringify(SIM);
+  stashGen();
+  try{
+    await ART.publish({'data/similar.json':{content:json,contentType:'application/json'}});
+    return true;
+  }catch(e){
+    const c=e&&e.code;
+    if(c==='conflict'){toast('نُشرت نسخة أحدث من الصفحة؛ سيُعاد تحميلها. أعيدي الحفظ بعدها.');return false}
+    if(c!=='capability_disabled'&&c!=='capability_removed'){toast(saveError(c));ss.del('gen');return false}
+  }
+  // Files form unavailable here (e.g. shared by link): republish the whole page.
+  try{
+    const r=await fetch('shell.html',{cache:'no-store'});if(!r.ok)throw {code:'upstream_error'};
+    const shell=await r.text();
+    const body=shell.replace('__SIMDATA__',()=>json.replace(/</g,'\\u003c'));
+    const html='<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>'+body+'</body></html>';
+    await ART.publish(html);
+    return true;
+  }catch(e){
+    if(e&&e.code==='conflict')toast('نُشرت نسخة أحدث من الصفحة؛ سيُعاد تحميلها. أعيدي الحفظ بعدها.');
+    else{toast(saveError(e&&e.code));ss.del('gen')}
+    return false;
+  }
+}
+function saveError(c){
+  if(c==='not_writer'||c==='not_granted'||c==='not_declared')return 'الحفظ متاح لمالكة الصفحة فقط.';
+  if(c==='rate_limited')return 'حفظتِ كثيراً خلال وقت قصير. انتظري دقيقة ثم احفظي مرة أخرى.';
+  if(c==='too_large')return 'الأسئلة المحفوظة كثيرة جداً. احذفي بعضها ثم حاولي.';
+  return 'تعذّر الحفظ الآن. حاولي مرة أخرى بعد قليل.';
+}
+
+// ---------- Bank ----------
+let DATA=[],SET=null;const cache={};
+async function loadSet(){
+  const s=SETS.find(x=>x.subj===$('#mat').value&&x.grade===$('#gr').value);SET=s;
+  $('#h1').textContent='بنك أسئلة TIMSS - '+s.subj;$('#sub').textContent=s.sub;$('#q').placeholder=s.ph;
+  ls.set('set',s.id);
+  $('#list').textContent='';$('#cnt').textContent='جاري تحميل الأسئلة…';
+  try{if(!cache[s.id]){const r=await fetch(s.file);if(!r.ok)throw 0;cache[s.id]=await r.json()}}
+  catch(e){$('#cnt').textContent='تعذّر تحميل أسئلة '+s.subj+'. حدّثي الصفحة وحاولي مرة أخرى.';return}
+  if(SET!==s)return;
+  DATA=cache[s.id];
+  opts($('#un'),[...new Set(DATA.map(d=>d.u))],'كل الوحدات');
+  const sv=[...new Set(DATA.map(d=>d.src).filter(Boolean))];
+  opts($('#src'),sv,'كل المصادر');$('#src').hidden=sv.length<2;
+  render();
+}
+function render(){
+  const q=norm($('#q').value.trim()),u=$('#un').value,s=$('#sk').value,sr=$('#src').value,hs=$('#hasSim').value;
+  const rows=DATA.filter(d=>(!u||d.u===u)&&(!s||d.s===s)&&(!sr||d.src===sr)&&(!hs||simFor(SET,d).length)&&(!q||norm(d.t+' '+d.k+' '+d.u+' '+(d.src||'')).includes(q)));
+  const nSim=DATA.reduce((n,d)=>n+simFor(SET,d).length,0);
+  $('#cnt').textContent='عدد الأسئلة المعروضة: '+rows.length+' من '+DATA.length+(nSim?' · أسئلة مقترحة: '+nSim:'');
+  const L=$('#list');L.textContent='';
+  rows.forEach(d=>L.append(card(d)));
+}
+function card(d){
+  const c=el('div','card'),m=el('div','meta');c.dataset.key=d.id;
+  m.append(el('div','ttl',d.t),el('span','tag',d.u));if(d.src)m.append(el('span','tag',d.src));
+  m.append(el('span','tag',(d.nn&&d.nn.includes('،')?'الأسئلة ':'سؤال ')+(d.nn||d.n)),el('span','tag s',d.s));
+  const okA=!!(d.a||d.ak),sgA=!d.a&&!!d.at;m.append(el('span','tag '+(okA?'ok':'sg'),okA&&sgA?'إجابة نموذجية + مقترحة':okA?'إجابة نموذجية':'إجابة مقترحة'));
+  if(d.nt)m.append(el('span','tag sg','تحتاج مراجعة'));
+  d.k.split('،').forEach(k=>m.append(el('span','tag','#'+k)));
+  const im=el('div','img'),i=new Image();i.loading='lazy';i.src=d.q;i.alt=d.t;im.append(i);
+  const a=el('div','act'),b1=el('button','p','إظهار الإجابة');b1.type='button';
+  const b2=el('button',null,'ولّدي سؤالاً على غرار هذا السؤال');b2.type='button';a.append(b1,b2);
+  c.append(m,im,a);
+  let ans=null;
+  const box=el('div','gen');box.hidden=true;c.append(box);
+  b1.onclick=()=>{if(ans){ans.remove();ans=null;b1.textContent='إظهار الإجابة';return}ans=answerBox(d);a.before(ans);b1.textContent='إخفاء الإجابة'};
+  // Each click reveals the next saved similar question; the owner can generate more after the last.
+  const st=SHOWN[d.id]=SHOWN[d.id]||{n:0};
+  const label=()=>{const sims=simFor(SET,d);
+    if(st.n<sims.length){b2.textContent=st.n?'ولّدي سؤالاً آخر':'ولّدي سؤالاً على غرار هذا السؤال';b2.disabled=false}
+    else if(IS_OWNER){b2.textContent='ولّدي أسئلة جديدة (للمالكة)';b2.disabled=false}
+    else{b2.textContent=sims.length?'عُرضت كل الأسئلة المقترحة':'ولّدي سؤالاً على غرار هذا السؤال';b2.disabled=!!sims.length}};
+  const draw=()=>{box.textContent='';const sims=simFor(SET,d);
+    for(let k=0;k<Math.min(st.n,sims.length);k++)box.append(qCard(sims[k],'سؤال مقترح '+(k+1),d,{saved:true,index:k}));
+    if(GEN[d.id])GEN[d.id].forEach((x,k)=>box.append(qCard(x,'سؤال مولَّد '+(k+1),d,{saved:false,index:k})));
+    if(st.msg)box.append(el('div','note',st.msg));
+    if(box.querySelector('.gq'))box.append(el('div','note','أسئلة مولَّدة بالذكاء الاصطناعي: راجعيها قبل استخدامها مع الطالبات.'));
+    box.hidden=!box.childNodes.length;label()};
+  b2.onclick=async()=>{const sims=simFor(SET,d);st.msg='';
+    if(st.n<sims.length){st.n++;draw();box.lastElementChild.previousElementSibling.scrollIntoView({block:'nearest'});return}
+    if(!sims.length&&!IS_OWNER){st.msg='لم تُضف أسئلة مقترحة لهذا السؤال بعد.';draw();return}
+    if(IS_OWNER){b2.disabled=true;st.msg='جاري توليد الأسئلة… قد يستغرق ذلك نصف دقيقة.';draw();b2.disabled=true;
+      st.msg=await generate(d);draw()}};
+  draw();
+  return c;
+}
+function answerBox(d){
+  if(!(d.a||d.ak||d.at))return el('div','na','الإجابة غير متوفرة: هذا السؤال غير موجود في ملف الإجابات المرفوع.');
+  const ans=el('div','ans'),OK='الإجابة النموذجية (من الملف المعتمد)',SG='إجابة مقترحة (ليست من الملف المعتمد، تحتاج مراجعة المعلمة)';
+  if(d.a){ans.append(el('div','alab ok',OK));const x=new Image();x.src=d.a;x.alt='الإجابة النموذجية';ans.append(x)}
+  if(d.ak)ans.append(el('div','alab ok',OK),el('div','at',d.ak));
+  if(d.at&&!d.a){const b=el('div','sgb');b.append(el('div','alab sg',SG),el('div','at',d.at));if(d.ex)b.append(el('div','ex',d.ex));ans.append(b)}
+  else if(d.ex)ans.append(el('div','ex','الشرح: '+d.ex));
+  if(d.nt)ans.append(el('div','nt',d.nt));
+  if(d.ref)ans.append(el('div','rf',d.ref));
+  return ans;
+}
+
+// ---------- Generation (works for viewers signed in to claude.ai) ----------
+let sample=null,canImg=false;
+function prompt(d){return `أنتِ مصممة اختبارات TIMSS ${SET.role}. هذا سؤال من بنك الأسئلة (الصورة مرفقة إن توفرت).
+الوحدة: ${d.u}. الموضوع: ${d.t}. المفاهيم: ${d.k}. مهارة التفكير: ${d.s}.
+ولّدي 3 أسئلة جديدة باللغة العربية الفصحى المبسطة على غرار هذا السؤال: نفس نمطه (اختيار من متعدد أو إجابة قصيرة) ونفس مستوى مهارة التفكير، لكن بموقف مختلف تماماً.
+معنى «على غرار»: حلّلي أولاً المهارة والمفهوم الذي يقيسه السؤال الأصلي وطريقة تفكير الطالب فيه، ثم ابنِي أسئلة جديدة تقيس المهارة نفسها في موقف جديد. ممنوع منعاً باتاً: إعادة السؤال نفسه أو تغيير كلمة أو رقم فيه، أو استعمال الأمثلة والأجسام والأرقام والخيارات نفسها. يجب أن تختلف الأسئلة الثلاثة الجديدة في الأمثلة والسياق عن الأصل وعن بعضها (${SET.ex}). ويبقى المفهوم من نفس الوحدة، ومستوى الصعوبة قريباً من الأصل.
+شروط الوضوح: (1) كل سؤال يكون مكتملاً ومفهوماً بذاته، بجملة واضحة تنتهي بالمطلوب صراحة (مثل: ما…؟ اختاري الإجابة الصحيحة. اشرحي…). (2) لا تكتبي عبارات مبهمة مثل «كما في الشكل» إلا إذا رسمتِ الشكل فعلاً. (3) إذا كان السؤال الأصلي يحتوي رسماً أو شكلاً أو جدولاً أو رسماً بيانياً، فارسمي لكل سؤال جديد شكلاً مناسباً بصيغة SVG كاملة في الحقل svg: ‏viewBox="0 0 420 280"، خلفية بيضاء، خطوط واضحة، تسميات عربية قصيرة بخط Tahoma وبحجم 14 على الأقل، بدون سكربتات أو صور خارجية، وبحيث يكفي الشكل وحده لحل السؤال. وإذا لم يكن في الأصل رسم فاترك svg نصاً فارغاً. (4) كل خيار في عنصر منفصل يبدأ بـ أ) ب) ج) د). (5) تأكدي من صحة الإجابة قبل كتابتها.
+أعيدي JSON فقط على شكل مصفوفة: [{"q":"نص السؤال","svg":"<svg ...>...</svg> أو نص فارغ","options":["أ) ...","ب) ..."] أو [] للإجابة القصيرة,"answer":"الإجابة الصحيحة","explain":"تفسير مختصر","skill":"معرفة|تطبيق|استدلال"}]`}
+async function generate(d){
+  if(!sample){try{sample=await claude.use('sample');canImg=!!sample&&!!(await sample.limits()).images}catch(e){}}
+  if(!sample)return 'التوليد المباشر يحتاج فتح الصفحة داخل claude.ai وأنتِ مسجّلة الدخول.';
+  try{
+    const o={modelTier:'default',cache:false};
+    if(canImg){const bin=atob(d.q.split(',')[1]),u8=new Uint8Array(bin.length);for(let z=0;z<bin.length;z++)u8[z]=bin.charCodeAt(z);o.images=[new Blob([u8],{type:'image/jpeg'})]}
+    const r=await sample.json(prompt(d),o);
+    GEN[d.id]=(Array.isArray(r)?r:[]).filter(x=>x&&typeof x.q==='string');
+    return 'اضغطي «احفظي للمعلمات» تحت السؤال الذي يعجبكِ ليظهر للجميع عند الضغط على زر التوليد.';
+  }catch(e){
+    return e&&e.code==='rate_limited'?'وصلتِ إلى حد الاستخدام مؤقتاً. حاولي بعد قليل.':e&&e.code==='not_granted'?'لم يُسمح للصفحة باستخدام التوليد. اسمحي له من قائمة الأذونات في الصفحة.':'تعذّر التوليد. حاولي مرة أخرى.';
+  }
+}
+
+function qText(x){return [x.q,...(x.options||[]),'الإجابة: '+x.answer,x.explain?'التفسير: '+x.explain:''].filter(Boolean).join('\n')}
+async function copyText(t,btn){
+  const done=()=>{const o=btn.textContent;btn.textContent='نُسخ ✓';setTimeout(()=>btn.textContent=o,1500)};
+  try{await navigator.clipboard.writeText(t);done()}
+  catch(e){const ta=el('textarea');ta.value=t;document.body.append(ta);ta.select();try{document.execCommand('copy');done()}catch(e2){}ta.remove()}
+}
+function qCard(x,heading,d,{saved,index}){
+  const q=el('div','gq');
+  q.append(el('b','h',heading+(x.skill?' ('+x.skill+')':'')),el('div','qt',x.q));
+  if(typeof x.svg==='string'&&x.svg.trim().startsWith('<svg')){const im=new Image();im.className='svg';im.alt='شكل السؤال';im.src='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(x.svg);q.append(im)}
+  const ol=el('div','opts');(x.options||[]).forEach(t=>ol.append(el('div',null,t)));q.append(ol);
+  const ga=el('div','ga','الإجابة: '+x.answer+(x.explain?'\n'+x.explain:''));ga.hidden=true;
+  const row=el('div','row'),bA=el('button',null,'إظهار الإجابة'),bC=el('button',null,'نسخ');bA.type=bC.type='button';
+  bA.onclick=()=>{ga.hidden=!ga.hidden;bA.textContent=ga.hidden?'إظهار الإجابة':'إخفاء الإجابة'};
+  bC.onclick=()=>copyText(qText(x),bC);
+  row.append(bA,bC);
+  if(IS_OWNER&&!saved){
+    const k=simKey(SET,d),already=(SIM.items[k]||[]).some(s=>s.q===x.q);
+    const b=el('button','p',already?'محفوظ للمعلمات ✓':'احفظي للمعلمات');b.type='button';b.disabled=already;
+    b.onclick=async()=>{
+      b.disabled=true;b.textContent='جاري الحفظ…';
+      const item={q:x.q,svg:x.svg||'',options:x.options||[],answer:x.answer,explain:x.explain||'',skill:x.skill||d.s};
+      (SIM.items[k]=SIM.items[k]||[]).push(item);
+      if(await persist()){b.textContent='محفوظ للمعلمات ✓';toast('حُفظ السؤال. يظهر الآن للجميع عند الضغط على زر التوليد.');SHOWN[d.id].n=SIM.items[k].length;GEN[d.id]=GEN[d.id].filter(g=>g!==x);refreshCard(d)}
+      else{SIM.items[k]=SIM.items[k].filter(s=>s!==item);if(!SIM.items[k].length)delete SIM.items[k];b.disabled=false;b.textContent='احفظي للمعلمات'}
+    };
+    row.append(b);
+  }
+  if(IS_OWNER&&saved){
+    const b=el('button',null,'حذف من البنك');b.type='button';
+    let armed=false;
+    b.onclick=async()=>{
+      if(!armed){armed=true;b.textContent='اضغطي مرة أخرى للتأكيد';setTimeout(()=>{if(armed){armed=false;b.textContent='حذف من البنك'}},4000);return}
+      armed=false;b.disabled=true;
+      const k=simKey(SET,d),old=SIM.items[k].slice();
+      SIM.items[k].splice(index,1);if(!SIM.items[k].length)delete SIM.items[k];
+      if(await persist()){toast('حُذف السؤال من البنك.');SHOWN[d.id].n=Math.max(0,SHOWN[d.id].n-1);refreshCard(d)}else{SIM.items[k]=old;b.disabled=false;b.textContent='حذف من البنك'}
+    };
+    row.append(b);
+  }
+  q.append(row,ga);
+  return q;
+}
+// After a files save this view keeps running: redraw the one card in place.
+function refreshCard(d){
+  const old=document.querySelector('.card[data-key="'+CSS.escape(d.id)+'"]');if(!old)return;
+  const n=card(d);old.replaceWith(n);
+  const nSim=DATA.reduce((t,x)=>t+simFor(SET,x).length,0);
+  $('#cnt').textContent=$('#cnt').textContent.replace(/ · أسئلة مقترحة: \d+/,'')+(nSim?' · أسئلة مقترحة: '+nSim:'');
+}
+
+// ---------- Boot ----------
+function grades(){opts($('#gr'),SETS.filter(x=>x.subj===$('#mat').value).map(x=>x.grade))}
+(async()=>{
+  opts($('#mat'),[...new Set(SETS.map(x=>x.subj))]);
+  let st=null;try{st=JSON.parse(ss.get('gen')||'null')}catch(e){}
+  ss.del('gen');
+  if(st&&st.items)Object.assign(GEN,st.items);if(st&&st.shown)Object.assign(SHOWN,st.shown);
+  const s0=SETS.find(x=>x.id===(st&&st.set))||SETS.find(x=>x.id===ls.get('set'))||SETS[0];
+  $('#mat').value=s0.subj;grades();$('#gr').value=s0.grade;
+  const reset=()=>{for(const k in GEN)delete GEN[k];for(const k in SHOWN)delete SHOWN[k]};
+  $('#mat').addEventListener('change',()=>{grades();reset();loadSet()});
+  $('#gr').addEventListener('change',()=>{reset();loadSet()});
+  ['#q','#un','#sk','#src','#hasSim'].forEach(s=>$(s).addEventListener('input',render));
+  await loadSimFile();
+  const tiles=$('#tiles');
+  SETS.forEach(x=>{
+    const b=el('button','tile');b.type='button';
+    const ns=Object.keys(SIM.items).filter(k=>k.startsWith(x.id+':')).reduce((t,k)=>t+SIM.items[k].length,0);
+    b.append(el('span','sb',x.subj),el('span','gd',x.grade),el('span','nm',x.n.toLocaleString('ar-EG')+' سؤالاً'),el('span','nm',ns?ns.toLocaleString('ar-EG')+' سؤالاً مقترحاً':''));
+    b.onclick=()=>enter(x);tiles.append(b)});
+  $('#backHome').onclick=()=>{$('#bankView').hidden=true;$('#home').hidden=false;reset();scrollTo(0,0)};
+  async function enter(x){try{window.goatcounter&&window.goatcounter.count&&window.goatcounter.count({path:'/'+x.id,title:x.subj+' - '+x.grade})}catch(e){}reset();$('#mat').value=x.subj;grades();$('#gr').value=x.grade;$('#home').hidden=true;$('#bankView').hidden=false;scrollTo(0,0);await loadSet()}
+  // After a save reloads the page, return straight to the questions.
+  if(st){$('#home').hidden=true;$('#bankView').hidden=false;await loadSet();if(st.y)scrollTo(0,st.y)}
+})();
+</script>
+
+<script data-goatcounter="https://timss-diraz.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
