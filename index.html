@@ -74,6 +74,7 @@ main{max-width:1000px;margin:auto;padding:12px 16px 40px}
 .stars button.on{color:#f5b301}
 .stars button:disabled{cursor:default}
 .rate .thx{font-size:.9rem;color:var(--mu);min-height:1.2em}
+.rate .chg{border:none;background:none;padding:0;color:var(--ac);font:inherit;text-decoration:underline;cursor:pointer}
 .credit{margin-top:28px;padding-top:14px;border-top:1px solid var(--bd);color:var(--mu);font-size:.88rem;display:grid;gap:2px}
 .credit b{color:var(--tx);font-weight:600}
 .back{border:none;background:none;color:var(--ac);padding:0;margin-bottom:6px;font-size:.9rem}
@@ -331,7 +332,8 @@ function refreshCard(d){
       b.onmouseenter=()=>{if(!done)paint(n)};b.onclick=()=>rate(n);box.append(b);return b});
     box.onmouseleave=()=>paint(done);
     function paint(n){bs.forEach((b,i)=>b.classList.toggle('on',i<n))}
-    function lock(){bs.forEach(b=>b.disabled=true);thx.textContent='شكراً لتقييمكِ 🌷'}
+    function lock(){bs.forEach(b=>b.disabled=true);thx.textContent='شكراً لتقييمكِ 🌷 ';
+      const c=el('button','chg','تغيير التقييم');c.type='button';c.onclick=()=>{done=0;paint(0);bs.forEach(b=>b.disabled=false);thx.textContent=''};thx.append(c)}
     function rate(n){if(done)return;done=n;paint(n);lock();
       try{localStorage.setItem(KEY,n)}catch(e){}
       try{window.goatcounter&&window.goatcounter.count&&window.goatcounter.count({path:'rating-'+n,title:'تقييم '+n+' من 5',event:true})}catch(e){}}
