@@ -323,6 +323,20 @@ function refreshCard(d){
 }
 
 // ---------- Boot ----------
+// Rating is drawn first so it never waits on the data files.
+  (function(){
+    const box=$('#stars'),thx=$('#thx'),KEY='timss-rating';let done=0;
+    try{done=+localStorage.getItem(KEY)||0}catch(e){}
+    const bs=[1,2,3,4,5].map(n=>{const b=el('button','','★');b.type='button';b.setAttribute('aria-label',n+' من ٥');
+      b.onmouseenter=()=>{if(!done)paint(n)};b.onclick=()=>rate(n);box.append(b);return b});
+    box.onmouseleave=()=>paint(done);
+    function paint(n){bs.forEach((b,i)=>b.classList.toggle('on',i<n))}
+    function lock(){bs.forEach(b=>b.disabled=true);thx.textContent='شكراً لتقييمكِ 🌷'}
+    function rate(n){if(done)return;done=n;paint(n);lock();
+      try{localStorage.setItem(KEY,n)}catch(e){}
+      try{window.goatcounter&&window.goatcounter.count&&window.goatcounter.count({path:'rating-'+n,title:'تقييم '+n+' من 5',event:true})}catch(e){}}
+    if(done){paint(done);lock()}
+  })();
 function grades(){opts($('#gr'),SETS.filter(x=>x.subj===$('#mat').value).map(x=>x.grade))}
 (async()=>{
   opts($('#mat'),[...new Set(SETS.map(x=>x.subj))]);
@@ -342,19 +356,6 @@ function grades(){opts($('#gr'),SETS.filter(x=>x.subj===$('#mat').value).map(x=>
     const ns=Object.keys(SIM.items).filter(k=>k.startsWith(x.id+':')).reduce((t,k)=>t+SIM.items[k].length,0);
     b.append(el('span','sb',x.subj),el('span','gd',x.grade),el('span','nm',x.n.toLocaleString('ar-EG')+' سؤالاً'),el('span','nm',ns?ns.toLocaleString('ar-EG')+' سؤالاً مقترحاً':''));
     b.onclick=()=>enter(x);tiles.append(b)});
-  (function(){
-    const box=$('#stars'),thx=$('#thx'),KEY='timss-rating';let done=0;
-    try{done=+localStorage.getItem(KEY)||0}catch(e){}
-    const bs=[1,2,3,4,5].map(n=>{const b=el('button','','★');b.type='button';b.setAttribute('aria-label',n+' من ٥');
-      b.onmouseenter=()=>{if(!done)paint(n)};b.onclick=()=>rate(n);box.append(b);return b});
-    box.onmouseleave=()=>paint(done);
-    function paint(n){bs.forEach((b,i)=>b.classList.toggle('on',i<n))}
-    function lock(){bs.forEach(b=>b.disabled=true);thx.textContent='شكراً لتقييمكِ 🌷'}
-    function rate(n){if(done)return;done=n;paint(n);lock();
-      try{localStorage.setItem(KEY,n)}catch(e){}
-      try{window.goatcounter&&window.goatcounter.count&&window.goatcounter.count({path:'rating-'+n,title:'تقييم '+n+' من 5',event:true})}catch(e){}}
-    if(done){paint(done);lock()}
-  })();
   $('#backHome').onclick=()=>{$('#bankView').hidden=true;$('#home').hidden=false;reset();scrollTo(0,0)};
   async function enter(x){try{window.goatcounter&&window.goatcounter.count&&window.goatcounter.count({path:'/'+x.id,title:x.subj+' - '+x.grade})}catch(e){}reset();$('#mat').value=x.subj;grades();$('#gr').value=x.grade;$('#home').hidden=true;$('#bankView').hidden=false;scrollTo(0,0);await loadSet()}
   // After a save reloads the page, return straight to the questions.
